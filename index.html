@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurante Ensigna · A tavola non s'invecchia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Dancing+Script:wght@600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#inicio" class="brand">
+      <img src="logo.png" alt="Logo Restaurante Ensigna" class="brand-logo">
+      <span class="brand-text">RESTAURANTE<br>ENSIGNA</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#historia">Historia</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#menu">Menú</a>
+      <a href="#lugar">Lugar</a>
+    </nav>
+
+    <a href="#reserva" class="btn-reservar btn-reservar--header">Reservar</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-media">
+      <img
+        src="https://images.unsplash.com/photo-1534238190030-235ef5040458?auto=format&fit=crop&w=1920&q=80"
+        alt="Interior cálido del restaurante, con botellas de vino iluminadas"
+        loading="eager">
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="plate-badge">
+        <svg class="plate-svg" viewBox="0 0 320 320" role="img" aria-labelledby="plateTitle">
+          <title id="plateTitle">A tavola non s'invecchia — Reservar mesa</title>
+
+          <circle cx="160" cy="160" r="155" class="plate-rim-outer"/>
+          <circle cx="160" cy="160" r="138" class="plate-rim-inner"/>
+
+          <path id="arcPath" d="M 46,205 A 128,128 0 1 1 274,205" fill="none"/>
+          <text class="plate-arc-text">
+            <textPath href="#arcPath" startOffset="50%" text-anchor="middle">A TAVOLA NON S'INVECCHIA</textPath>
+          </text>
+
+          <image href="logo.png" x="95" y="95" width="130" height="130" class="plate-logo"/>
+        </svg>
+
+        <a href="#reserva" class="plate-cta">Reservar Mesa</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-strip" aria-label="Datos de contacto y horario">
+    <div class="info-strip-inner">
+      <div class="info-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="currentColor"/></svg>
+        <span>Avenida 9 de Julio 6229</span>
+      </div>
+      <div class="info-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l4 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>9:00&nbsp;–&nbsp;16:00 · 20:00&nbsp;–&nbsp;00:00</span>
+      </div>
+      <div class="info-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.5 2.3.7 3.6.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.5.7 3.6.1.4.1.8-.2 1.1L6.6 10.8Z" fill="currentColor"/></svg>
+        <span>+54 922 412 3451</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
