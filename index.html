@@ -81,7 +81,112 @@
       </div>
     </div>
   </section>
+
+  <section class="section section--cream" id="historia">
+    <div class="wrap split">
+      <div class="split-text">
+        <h2 class="title">Una mesa larga, como en casa de la nonna</h2>
+        <p class="script-note">A tavola non s'invecchia</p>
+        <p>Ensigna nació de una idea simple: que comer bien es una forma de reunirse. Empezamos con pocas mesas, una cocina chica y las recetas que la familia hacía los domingos.</p>
+        <p>Hoy seguimos amasando a mano cada mañana, cocinando las salsas a fuego lento y recibiendo a cada persona como si fuera de la familia. La carta cambió con los años; el criterio, no.</p>
+        <ul class="timeline">
+          <li><strong>Los comienzos</strong><span>Una cocina familiar y seis mesas.</span></li>
+          <li><strong>La casa propia</strong><span>Nos mudamos a la Avenida 9 de Julio.</span></li>
+          <li><strong>Hoy</strong><span>Pastas frescas y horno a leña, todos los días.</span></li>
+        </ul>
+      </div>
+      <figure class="split-media">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=75" alt="Salón del restaurante con mesas de madera" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="fotos">
+    <div class="wrap">
+      <h2 class="title">Fotos</h2>
+      <p class="lead">Platos, salón y mucha mesa compartida. Tocá una foto para verla grande.</p>
+      <div class="gallery">
+        <button class="shot shot--tall" data-full="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1600&q=75"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=75" alt="Pizza al horno con albahaca" loading="lazy"></button>
+        <button class="shot" data-full="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1600&q=75"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=700&q=75" alt="Plato de pasta con salsa de tomate" loading="lazy"></button>
+        <button class="shot" data-full="https://images.unsplash.com/photo-1534238190030-235ef5040458?auto=format&fit=crop&w=1600&q=75"><img src="https://images.unsplash.com/photo-1534238190030-235ef5040458?auto=format&fit=crop&w=700&q=75" alt="Botellas de vino iluminadas" loading="lazy"></button>
+        <button class="shot shot--wide" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=75"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=75" alt="Plato servido en la mesa" loading="lazy"></button>
+        <button class="shot" data-full="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1600&q=75"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=75" alt="Pasta casera con tomates" loading="lazy"></button>
+      </div>
+    </div>
+    <dialog class="lightbox" id="lightbox"><button class="lightbox-close" aria-label="Cerrar">&times;</button><img alt=""></dialog>
+  </section>
+
+  <section class="section section--cream" id="menu">
+    <div class="wrap">
+      <h2 class="title">Menú</h2>
+      <div class="tabs" role="tablist">
+        <button role="tab" class="tab is-active" data-tab="entradas" aria-selected="true">Entradas</button>
+        <button role="tab" class="tab" data-tab="pastas" aria-selected="false">Pastas</button>
+        <button role="tab" class="tab" data-tab="pizzas" aria-selected="false">Pizzas</button>
+        <button role="tab" class="tab" data-tab="postres" aria-selected="false">Postres</button>
+      </div>
+
+      <div class="panel is-active" id="tab-entradas" role="tabpanel">
+        <dl class="dishes">
+          <div><dt>Bruschetta al pomodoro</dt><dd>$6.500</dd><p>Pan tostado, tomate, ajo y albahaca.</p></div>
+          <div><dt>Provoleta a la parrilla</dt><dd>$8.200</dd><p>Con orégano y aceite de oliva.</p></div>
+          <div><dt>Carpaccio de res</dt><dd>$11.800</dd><p>Rúcula, parmesano y limón.</p></div>
+          <div><dt>Arancini</dt><dd>$7.900</dd><p>Bolitas de arroz rellenas de mozzarella.</p></div>
+        </dl>
+      </div>
+      <div class="panel" id="tab-pastas" role="tabpanel" hidden>
+        <dl class="dishes">
+          <div><dt>Spaghetti alla carbonara</dt><dd>$12.500</dd><p>Panceta, huevo, pecorino y pimienta.</p></div>
+          <div><dt>Ñoquis al pomodoro</dt><dd>$11.200</dd><p>Salsa de tomate casera y albahaca.</p></div>
+          <div><dt>Lasagna de la nonna</dt><dd>$13.900</dd><p>Ragú, bechamel y queso gratinado.</p></div>
+          <div><dt>Ravioles de ricota y espinaca</dt><dd>$12.900</dd><p>Con manteca y salvia.</p></div>
+        </dl>
+      </div>
+      <div class="panel" id="tab-pizzas" role="tabpanel" hidden>
+        <dl class="dishes">
+          <div><dt>Margherita</dt><dd>$10.800</dd><p>Tomate, mozzarella y albahaca.</p></div>
+          <div><dt>Napolitana</dt><dd>$12.200</dd><p>Mozzarella, tomate, ajo y anchoas.</p></div>
+          <div><dt>Diavola</dt><dd>$12.900</dd><p>Salame picante y mozzarella.</p></div>
+          <div><dt>Cuatro quesos</dt><dd>$13.400</dd><p>Mozzarella, gorgonzola, parmesano y provolone.</p></div>
+        </dl>
+      </div>
+      <div class="panel" id="tab-postres" role="tabpanel" hidden>
+        <dl class="dishes">
+          <div><dt>Tiramisú</dt><dd>$6.800</dd><p>Mascarpone, café y cacao.</p></div>
+          <div><dt>Panna cotta</dt><dd>$6.200</dd><p>Con salsa de frutos rojos.</p></div>
+          <div><dt>Cannoli sicilianos</dt><dd>$6.500</dd><p>Ricota dulce y chips de chocolate.</p></div>
+          <div><dt>Affogato</dt><dd>$5.900</dd><p>Helado de crema con espresso.</p></div>
+        </dl>
+      </div>
+      <p class="fineprint">Precios en pesos argentinos. Consultá por opciones sin TACC y vegetarianas.</p>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="lugar">
+    <div class="wrap place">
+      <div class="place-info">
+        <h2 class="title">Cómo llegar</h2>
+        <ul class="place-list">
+          <li><strong>Dirección</strong><span>Avenida 9 de Julio 6229</span></li>
+          <li><strong>Horario</strong><span>Todos los días<br>9:00 – 16:00 y 20:00 – 00:00</span></li>
+          <li><strong>Teléfono</strong><a href="tel:+549224123451">+54 922 412 3451</a></li>
+        </ul>
+        <a href="#reserva" class="btn-reservar">Reservar mesa</a>
+      </div>
+      <div class="map">
+        <iframe title="Mapa de Restaurante Ensigna" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Avenida+9+de+Julio+6229&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer" id="reserva">
+  <img src="logo.png" alt="" class="footer-logo">
+  <p class="script-note">A tavola non s'invecchia</p>
+  <p>Reservas al <a href="tel:+549224123451">+54 922 412 3451</a></p>
+</footer>
+
 
 <script src="app.js"></script>
 </body>

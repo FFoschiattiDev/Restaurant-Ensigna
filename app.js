@@ -40,4 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', () => {
     if (window.innerWidth > 860) closeNav();
   });
+
+  // Pestañas del menú
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(t => { t.classList.remove('is-active'); t.setAttribute('aria-selected', 'false'); });
+    document.querySelectorAll('.panel').forEach(p => { p.hidden = true; p.classList.remove('is-active'); });
+    tab.classList.add('is-active');
+    tab.setAttribute('aria-selected', 'true');
+    const panel = document.getElementById('tab-' + tab.dataset.tab);
+    panel.hidden = false;
+    panel.classList.add('is-active');
+  }));
+
+  // Galería con visor ampliado
+  const box = document.getElementById('lightbox');
+  const boxImg = box.querySelector('img');
+  document.querySelectorAll('.shot').forEach(shot => shot.addEventListener('click', () => {
+    boxImg.src = shot.dataset.full;
+    boxImg.alt = shot.querySelector('img').alt;
+    box.showModal();
+  }));
+  box.querySelector('.lightbox-close').addEventListener('click', () => box.close());
+  box.addEventListener('click', e => { if (e.target === box) box.close(); });
 });
