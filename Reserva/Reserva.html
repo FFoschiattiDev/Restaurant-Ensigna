@@ -76,7 +76,7 @@
                 <div class="campo-grupo">
                     <label for="invitados">Cantidad de invitados</label>
                     <select id="invitados" name="invitados" required>
-                        <option value="" disabled selected>Selecciona cantidad del 1 al 6</option>
+                        <option value="" disabled hidden selected>Selecciona cantidad del 1 al 6</option>
                         <option value="1">1 persona (Solo tú)</option>
                         <option value="2">2 personas</option>
                         <option value="3">3 personas</option>
@@ -89,7 +89,37 @@
                 <!-- CAMPO 5: Horario de la Visita -->
                 <div class="campo-grupo">
                     <label for="hora">Horario de la visita</label>
-                    <input type="time" id="hora" name="hora" required>
+                    <select id="hora" name="hora" required>
+                        <option value="" disabled hidden selected >Selecciona un horario</option>
+
+                        <optgroup label="Turno del mediodía">
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                        </optgroup>
+
+                        <optgroup label="Turno de la noche">
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </optgroup>
+                    </select>
                 </div>
 
                 <!-- CAMPO 6: Teléfono Móvil -->
