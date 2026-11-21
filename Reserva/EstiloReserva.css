@@ -1,0 +1,395 @@
+/* ========================================== */
+/* ESTILOS GENERALES Y RESETEO BÁSICO         */
+/* ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* ========================================== */
+/* SECCIÓN PRINCIPAL Y FONDO (BACKGROUND)      */
+/* ========================================== */
+/* 
+   INSTRUCCIÓN PARA INTEGRAR TU FONDO:
+   1. Coloca tu imagen de fondo en la misma carpeta donde tengas este archivo CSS.
+   2. Reemplaza 'nombre-de-tu-imagen.jpg' por el nombre real de tu archivo.
+*/
+.main-background {
+    background-image: url('MesasBG.png'); /* <-- CAMBIA ESTO por tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ========================================== */
+/* CUADRO NEGRO CENTRAL (GUÍA VISUAL)          */
+/* ========================================== */
+.cuadro-negro {
+    background-color: #000000; /* Fondo negro sólido */
+    color: #ffffff;
+    width: 100%;
+    max-width: 500px; /* Ancho máximo ideal para ordenador */
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cuadro-negro h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cuadro-negro p {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* ========================================== */
+/* CAMPOS DEL FORMULARIO                      */
+/* ========================================== */
+.campo-grupo {
+    margin-bottom: 15px;
+}
+
+.campo-grupo label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #dddddd;
+}
+
+/* Estilo unificado para inputs y select (Inputs blancos limpios) */
+.campo-grupo input, 
+.campo-grupo select {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.campo-grupo input:focus, 
+.campo-grupo select:focus {
+    outline: none;
+    border-color: #4CAF50; /* Resaltado verde al hacer foco */
+}
+
+/* ========================================== */
+/* CAMPO CHECKBOX                             */
+/* ========================================== */
+.campo-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 13px;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+.campo-checkbox input {
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.campo-checkbox label {
+    cursor: pointer;
+}
+
+/* ========================================== */
+/* BOTÓN RESERVAR                             */
+/* ========================================== */
+#btn-reservar {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50; /* Verde brillante como en tu imagen */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#btn-reservar:hover {
+    background-color: #43A047; /* Un verde un poco más oscuro al pasar el cursor */
+}
+
+/* ========================================== */
+/* MODAL DE RESERVA COMPLETADA                */
+/* ========================================== */
+.modal-oculto {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.modal-contenido p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#btn-cerrar-modal {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#btn-cerrar-modal:hover {
+    background-color: #43A047;
+}
+
+/* ========================================== */
+/* DISEÑO RESPONSIVO (ADAPTABLE A MÓVILES)      */
+/* ========================================== */
+@media (max-width: 600px) {
+    .main-background {
+        padding: 10px; /* Menos margen en pantallas muy chicas de celular */
+    }
+
+    .cuadro-negro {
+        padding: 20px 15px; /* Reduce espacios internos para aprovechar la pantalla del móvil */
+    }
+
+    .cuadro-negro h1 {
+        font-size: 22px;
+    }
+
+    .campo-grupo input, 
+    .campo-grupo select {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* ========================================== */
+/* COPIAS DEL ARCHIVO MAIN                    */
+/* ========================================== */
+
+/*Token*/
+:root{
+  --ink: #16140f;
+  --ink-soft: #2a271f;
+  --cream: #f7f3ea;
+  --green: #4f7a35;
+  --green-deep: #3b5c27;
+  --sauce: #c23b1f;
+  --sauce-deep: #a12f17;
+  --line: rgba(247,243,234,0.22);
+
+  --font-display: "Fraunces", serif;
+  --font-script: "Dancing Script", cursive;
+  --font-ui: "Jost", sans-serif;
+}
+
+/* ---------- Header ---------- */
+.site-header{
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  padding: 22px 0;
+  transition: background .3s ease, padding .3s ease;
+}
+.site-header.is-scrolled{
+  position: fixed;
+  background: rgba(22,20,15,0.92);
+  backdrop-filter: blur(6px);
+  padding: 14px 0;
+  box-shadow: 0 1px 0 var(--line);
+}
+.header-inner{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+}
+.brand-mark{ width: 26px; height: 26px; color: var(--green); flex-shrink: 0; }
+.brand-logo{ width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; border-radius: 50%; }
+.brand-text{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .06em;
+  line-height: 1.25;
+}
+.main-nav{
+  display: flex;
+  gap: 36px;
+  font-size: 15px;
+}
+.main-nav a{
+  position: relative;
+  padding: 4px 0;
+}
+.main-nav a::after{
+  content: "";
+  position: absolute;
+  left: 0; bottom: -2px;
+  width: 0; height: 1px;
+  background: var(--green);
+  transition: width .25s ease;
+}
+.main-nav a:hover::after{ width: 100%; }
+
+.btn-reservar{
+  display: inline-block;
+  background: var(--green);
+  color: var(--cream);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px 26px;
+  border-radius: 999px;
+  transition: background .2s ease, transform .2s ease;
+}
+.btn-reservar:hover{ background: var(--green-deep); transform: translateY(-1px); }
+
+.nav-toggle{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px; height: 30px;
+  background: none; border: none; cursor: pointer; padding: 0;
+}
+.nav-toggle span{
+  display: block;
+  width: 100%; height: 2px;
+  background: var(--cream);
+  border-radius: 2px;
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+/* ---------- Info strip ---------- */
+.info-strip{
+  background: var(--ink);
+  border-top: 1px solid var(--line);
+}
+.info-strip-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 26px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 40px;
+  justify-content: space-between;
+}
+.info-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--cream);
+  white-space: nowrap;
+}
+.info-item svg{ width: 18px; height: 18px; color: var(--green); flex-shrink: 0; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px){
+  .main-nav, .btn-reservar--header{ display: none; }
+  .nav-toggle{ display: flex; }
+
+  .main-nav.is-open{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: rgba(22,20,15,.97);
+    padding: 20px 32px 26px;
+    gap: 18px;
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 480px){
+  .brand-text{ font-size: 12px; }
+  .info-item{ font-size: 13.5px; }
+}
+
+/* ========================*/
+/*   EXTRAS - AGREGADOS    */
+/* ========================*/
+
+/* AJUSTES DEL NAVBAR PARA LA PÁGINA RESERVA */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    background: var(--ink);
+    color: var(--cream);
+}
+
+.site-header.is-scrolled {
+    position: sticky;
+    top: 0;
+}
+
+.site-header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header,
+.site-header * {
+    font-family: var(--font-ui);
+}
+
+.site-header .brand-text {
+    font-family: var(--font-display);
+}
+
+/* AJUSTES TIPOGRÁFICOS DEL FOOTER */
+
+.info-strip,
+.info-strip * {
+    font-family: var(--font-ui);
+}
