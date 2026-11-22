@@ -36,7 +36,7 @@ body, html {
 /* CUADRO NEGRO CENTRAL (GUÍA VISUAL)          */
 /* ========================================== */
 .cuadro-negro {
-    background-color: #000000; /* Fondo negro sólido */
+    background-color: #000000e1; /* Fondo negro */
     color: #ffffff;
     width: 100%;
     max-width: 500px; /* Ancho máximo ideal para ordenador */

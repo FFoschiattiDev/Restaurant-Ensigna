@@ -26,7 +26,7 @@
       <a href="#lugar">Lugar</a>
     </nav>
 
-    <a href="Reserva/Reserva.html" class="btn-reservar btn-reservar--header">Reservar</a>
+    <a href="Reserva/Reserva.html" class <a href="Reserva/Reserva.html" class="btn-reservar btn-reservar--header">Reservar</a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -57,27 +57,13 @@
             <textPath href="#arcPath" startOffset="50%" text-anchor="middle">A TAVOLA NON S'INVECCHIA</textPath>
           </text>
 
-          <image href="logo.png" x="95" y="95" width="130" height="130" class="plate-logo"/>
+          <defs>
+            <clipPath id="plateLogoClip"><rect x="95" y="95" width="130" height="130" rx="35"/></clipPath>
+          </defs>
+          <image href="logo.png" x="95" y="95" width="130" height="130" class="plate-logo" clip-path="url(#plateLogoClip)"/>
         </svg>
 
         <a href="#reserva" class="plate-cta">Reservar Mesa</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="info-strip" aria-label="Datos de contacto y horario">
-    <div class="info-strip-inner">
-      <div class="info-item">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" fill="currentColor"/></svg>
-        <span>Avenida 9 de Julio 6229</span>
-      </div>
-      <div class="info-item">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l4 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        <span>9:00&nbsp;–&nbsp;16:00 · 20:00&nbsp;–&nbsp;00:00</span>
-      </div>
-      <div class="info-item">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.5 2.3.7 3.6.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.5.7 3.6.1.4.1.8-.2 1.1L6.6 10.8Z" fill="currentColor"/></svg>
-        <span>+54 922 412 3451</span>
       </div>
     </div>
   </section>
@@ -171,7 +157,7 @@
           <li><strong>Horario</strong><span>Todos los días<br>9:00 – 16:00 y 20:00 – 00:00</span></li>
           <li><strong>Teléfono</strong><a href="tel:+549224123451">+54 922 412 3451</a></li>
         </ul>
-        <a href="#reserva" class="btn-reservar">Reservar mesa</a>
+        <a href="Reserva/Reserva.html" class="btn-reservar">Reservar mesa</a>
       </div>
       <div class="map">
         <iframe title="Mapa de Restaurante Ensigna" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -181,13 +167,14 @@
   </section>
 </main>
 
-<footer class="site-footer" id="reserva">
-  <img src="logo.png" alt="" class="footer-logo">
-  <p class="script-note">A tavola non s'invecchia</p>
-  <p>Reservas al <a href="tel:+549224123451">+54 922 412 3451</a></p>
+<footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> TODOS LOS DERECHOS RESERVADOS RESTAURANTE ENSIGNA</p>
 </footer>
 
 
 <script src="app.js"></script>
+<script>
+  document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
